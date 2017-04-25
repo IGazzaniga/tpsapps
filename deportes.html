@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TP3</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/imagenes.js"></script>
+</head>
+<body onload="inicializa()">
+	<div class="header">
+		<img src="imgs/logo.jpg">
+		<h1>Distribución fitness</h1>
+	</div>
+	<div class="menu">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="accesorios.html">Accesorios</a></li>
+			<li><a href="suplementos.html">Suplementos</a></li>
+			<li><a href="deportes.html">Deportes</a></li>
+			<li><a href="encuesta.html">Encuesta</a></li>
+
+		</ul>
+	</div>
+	<div class="contenido">
+		<h2>Deportes</h2><br>
+		<div class="deportes" id="deportes">
+			<div class="foto"> <img src="imgs/foto7.jpg" id="foto7" onclick= "opacidad(id)" alt=""><br><p>Raqueta </p><p>Precio: $50</p></div>
+			<div class="foto"> <img src="imgs/foto8.jpg" id="foto8" onclick= "opacidad(id)" alt=""><br><p>Pelota de fútbol </p><p>Precio: $50</p></div>
+			<div class="foto"> <img src="imgs/foto9.jpg" id="foto9" onclick= "opacidad(id)" alt=""><br><p>Pelota de básquet</p><p>Precio: $50</p></div>
+		</div>
+	</div>
+	<div id="contprecio"><p>Precio</p><textarea id="precio" rows="1" cols="3" readonly></textarea></div>
+	<div class="footer">
+		<p>Ignacio Gazzaniga e Iván Steger.Todos los derechos reservados.</p>
+	</div>
+</body>
+</html>

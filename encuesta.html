@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Encuesta</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/validacion.js"></script>
+</head>
+<body>
+<div class="header">
+		<img class="logo" src="imgs/logo.jpg">
+		<h1>Distribución fitness</h1>
+	</div>
+	<div class="menu">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="accesorios.html">Accesorios</a></li>
+			<li><a href="suplementos.html">Suplementos</a></li>
+			<li><a href="deportes.html">Deportes</a></li>
+			<li><a href="encuesta.html">Encuesta</a></li>
+		</ul>
+	</div>
+	<div class="contenido">
+		
+	<form id="formulario" method="post" onsubmit="return validar()">
+		<br><p>Nombre</p>
+		<input type="text" name="nombre"><br>
+		<p>Apellido</p>
+		<input type="text" name="apellido"><br>
+		<p>Fecha de nacimiento</p>
+		<input type="date" name="fecha"><br>
+		<p>Sexo</p><br>
+		<input type="radio" name="sexo" value="Masculino"> Masculino<br>
+  		<input type="radio" name="sexo" value="Femenino"> Femenino<br><br>
+  		<p>Valoración de la página</p><br>
+  		<input type="radio" name="valoracion" value="Lamentable"> Lamentable<br>
+  		<input type="radio" name="valoracion" value="Mala">Mala<br>
+  		<input type="radio" name="valoracion" value="Podría ser mejor"> Podría ser mejor<br>
+  		<input type="radio" name="valoracion" value="Buena">Buena<br>
+  		<input type="radio" name="valoracion" value="¡Me encantó!">Me encantó<br>
+  		<textarea name="comentario" form="formulario">Comentarios...</textarea><br>
+  		<button type="submit" form="formulario" value="Submit">Submit</button>
+  		<button type="reset" value="Reset">Restablecer valores</button>
+  		<button type="button" value="Cancelar" onclick="cancelar()">Cancelar</button>
+  	</form>
+	</div>
+
+
+	<div class="footer">
+		<p>Ignacio Gazzaniga e Iván Steger. Todos los derechos reservados.</p>
+	</div>
+	
+</body>
+</html>
