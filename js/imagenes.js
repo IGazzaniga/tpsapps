@@ -1,23 +1,28 @@
+var total;
 function inicializa(){
-	var total = 0;
-	document.getElementById("precio").innerHTML = total;
-}
-
+	total = 0;
+	$("#precio").html(total);
+	console.log(total);
+};
 function opacidad(id){
-	var x = document.getElementById(id).style.opacity;
-	var suma = parseInt(document.getElementById("precio").value);
+	var fotos = $("#"+id);
+	var foto = fotos[0];
+	var op = foto.style.opacity;
+	console.log(foto); 
+	var suma = parseInt($("#precio").val());
 
-	if(x !== "0.5"){
+	if(op !== "0.5"){
 	
-	document.getElementById(id).style.opacity = "0.5";
+	foto.style.opacity = "0.5";
 
 	suma = suma + 50;
+
 	}
 
 	else{
-		document.getElementById(id).style.opacity = "1";
+		foto.style.opacity = "1";
 		suma = suma - 50;
 	}
 
-	document.getElementById("precio").innerHTML = suma;
+	$("#precio").html(suma);
 }
