@@ -114,6 +114,16 @@ li a{
 #formulario{
 	text-align: center;
 }
+#oculto{
+	display:none;
+	font-style: bold;
+	color: green;
+	background-color: black;
+	text-align:center;
+	height: 500px;
+	width:100%;
+	font-size: 50px;
+}
 
 .foto:hover{
 	border-color: lightblue;

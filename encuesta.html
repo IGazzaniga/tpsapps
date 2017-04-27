@@ -21,9 +21,15 @@
 			<li><a href="encuesta.html">Encuesta</a></li>
 		</ul>
 	</div>
+	
 	<div class="contenido">
+		<div id="oculto">
+		<br><br><br>
+			<h3>¡Gracias por completar la encuesta!</h3>
+		</div>
 		
 	<form id="formulario" method="post" onsubmit="return validar()">
+		
 		<br><p>Nombre</p>
 		<input type="text" name="nombre"><br>
 		<p>Apellido</p>
@@ -44,9 +50,7 @@
   		<button type="reset" value="Reset">Restablecer valores</button>
   		<button type="button" value="Cancelar" onclick="cancelar()">Cancelar</button>
   	</form>
-	</div>
-
-
+  	</div>
 	<div class="footer">
 		<p>Ignacio Gazzaniga e Iván Steger. Todos los derechos reservados.</p>
 	</div>
