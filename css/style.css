@@ -10,8 +10,21 @@
 	background-color:green;
 
 }
-
+#escondido{
+	display: none;
+	color:white;
+	position: absolute;
+	left:50%;
+	width: 500px;
+	height: 60px;
+	font-size: 30px;
+}
+#ojo{
+	width: 30px;
+	height: 30px;
+}
 .header img{
+	position:absolute;
 	float: left;
 	max-height: 150px;
 }

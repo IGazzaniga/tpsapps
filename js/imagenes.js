@@ -13,9 +13,8 @@ function opacidad(id){
 
 	if(op !== "0.5"){
 	
-	foto.style.opacity = "0.5";
-
-	suma = suma + 50;
+		foto.style.opacity = "0.5";
+		suma = suma + 50;
 
 	}
 
