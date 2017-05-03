@@ -155,3 +155,16 @@ li a{
 #precio{
 	text-align: center;
 }
+.contacto{
+	font-size: 30px;
+
+}
+#negrita{
+	font-weight: bold;
+}
+#mapa {
+	width: 500px; 
+	height: 200px; 
+	margin: 0 auto;
+	border: 5px solid; 
+}

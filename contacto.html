@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,10 +5,12 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/jquery-3.2.1.js"></script>
-	<script src="js/imagenes.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="js/mapa.js"></script>
 	<script src="js/animaciones.js"></script>
 </head>
-<body onload="inicializa()">
+
+<body>
 	<div class="header">
 		<img class="logo" src="imgs/logo.jpg">
 		<h1 id="titulo">Distribución fitness</h1>
@@ -33,14 +34,20 @@
 		</ul>
 	</div>
 	<div class="contenido">
-		<h2>Suplementos</h2><br>	
-		<div class="suplementos" id="suplementos">
-			<div class="foto"> <img src="imgs/foto4.jpg" id="foto4" onclick= "opacidad(id)" alt=""><br><p>Proteína  </p><p>Precio: $50</p></div>
-			<div class="foto"> <img src="imgs/foto5.jpg" id="foto5" onclick= "opacidad(id)" alt=""><br><p>Quemador de grasas </p><p>Precio: $50</p></div>
-			<div class="foto"> <img src="imgs/foto6.jpg" id="foto6" onclick= "opacidad(id)" alt=""><br><p>Barra de proteína </p><p>Precio: $50</p></div>
+		<h2>Contacto</h2><br>
+		<div class="contacto" id="contacto">
+			<p><span id="negrita">Distribución Fitness Sociedad Anónima</span></p>
+			<p><span id="negrita">Teléfono: </span>221-5487894</p>
+			<p><span id="negrita">E-mail: </span>distribucionfitness@gmail.com</p>
+			<p><span id="negrita">Fax: </span>221-4865462</p>
+			<div id="dirección">
+				<p><span id="negrita">Nuestra dirección</span></p>
+				<div id="mapa">
+					
+				</div>
+			</div>
 		</div>
 	</div>
-	<div id="contprecio"><p>Precio</p><textarea id="precio" rows="1" cols="3" readonly></textarea></div>
 	<div class="footer">
 		<p>Ignacio Gazzaniga e Iván Steger. Todos los derechos reservados.</p>
 	</div>
